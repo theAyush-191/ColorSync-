@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A90B54402E3BFB45005CFA90 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A90B543F2E3BFB45005CFA90 /* RealmSwift */; };
+		A9C9A6AF2E3CC4B1007C6C25 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A9C9A6AE2E3CC4B1007C6C25 /* FirebaseAuth */; };
+		A9C9A6B12E3CC4B1007C6C25 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A9C9A6B02E3CC4B1007C6C25 /* FirebaseDatabase */; };
+		A9C9A6B32E3CC4B1007C6C25 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9C9A6B22E3CC4B1007C6C25 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,7 +18,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A90B53E52E3A328C005CFA90 /* Exceptions for "ColorSync" folder in "ColorSync" target */ = {
+		A9C9A70D2E3ECEBE007C6C25 /* Exceptions for "ColorSync" folder in "ColorSync" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -28,7 +31,7 @@
 		A90B53D52E3A328A005CFA90 /* ColorSync */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A90B53E52E3A328C005CFA90 /* Exceptions for "ColorSync" folder in "ColorSync" target */,
+				A9C9A70D2E3ECEBE007C6C25 /* Exceptions for "ColorSync" folder in "ColorSync" target */,
 			);
 			path = ColorSync;
 			sourceTree = "<group>";
@@ -40,7 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C9A6B12E3CC4B1007C6C25 /* FirebaseDatabase in Frameworks */,
+				A9C9A6B32E3CC4B1007C6C25 /* FirebaseFirestore in Frameworks */,
 				A90B54402E3BFB45005CFA90 /* RealmSwift in Frameworks */,
+				A9C9A6AF2E3CC4B1007C6C25 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +90,9 @@
 			name = ColorSync;
 			packageProductDependencies = (
 				A90B543F2E3BFB45005CFA90 /* RealmSwift */,
+				A9C9A6AE2E3CC4B1007C6C25 /* FirebaseAuth */,
+				A9C9A6B02E3CC4B1007C6C25 /* FirebaseDatabase */,
+				A9C9A6B22E3CC4B1007C6C25 /* FirebaseFirestore */,
 			);
 			productName = ColorSync;
 			productReference = A90B53D32E3A328A005CFA90 /* ColorSync.app */;
@@ -115,6 +124,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A90B543E2E3BFB45005CFA90 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				A9C9A6AD2E3CC4B1007C6C25 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A90B53D42E3A328A005CFA90 /* Products */;
@@ -152,6 +162,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SU4W2T7DVJ;
@@ -160,15 +171,15 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ayush.exe.ColorSync;
+				PRODUCT_BUNDLE_IDENTIFIER = ayush.exe.ColorSyncs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -181,6 +192,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SU4W2T7DVJ;
@@ -189,15 +201,15 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ayush.exe.ColorSync;
+				PRODUCT_BUNDLE_IDENTIFIER = ayush.exe.ColorSyncs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,6 +370,14 @@
 				kind = branch;
 			};
 		};
+		A9C9A6AD2E3CC4B1007C6C25 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -365,6 +385,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A90B543E2E3BFB45005CFA90 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		A9C9A6AE2E3CC4B1007C6C25 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9C9A6AD2E3CC4B1007C6C25 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A9C9A6B02E3CC4B1007C6C25 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9C9A6AD2E3CC4B1007C6C25 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		A9C9A6B22E3CC4B1007C6C25 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9C9A6AD2E3CC4B1007C6C25 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

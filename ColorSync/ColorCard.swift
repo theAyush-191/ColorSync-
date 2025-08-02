@@ -9,13 +9,18 @@ import UIKit
 import RealmSwift
 
 class ColorCard:Object {
-    
-    @Persisted var hex: String
+    @Persisted(primaryKey: true) var id: String = UUID().uuidString
+    @Persisted var hex:String
+    @Persisted var date:Date
     @Persisted var isSynced:Bool=false
+    @Persisted var ownerId:String
     
-    convenience init(hex: String) {
+    
+    convenience init(hex: String,date:Date,ownerId:String) {
            self.init()
            self.hex = hex
+        self.date=date
+        self.ownerId = ownerId
        }
     
     // Static function to generate random hex color
